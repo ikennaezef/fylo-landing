@@ -2,7 +2,7 @@
 
 # Overview
 
-This is a fully responsive e-commerce website for a web storage company Fylo.
+This is a fully responsive landing page website for a web storage company Fylo.
 
 ### Screenshots
 

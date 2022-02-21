@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6, .btn, a {
 	display: flex;	
 	align-items: center;
 	justify-content: space-between;
-	padding: 3rem 7%;
+	padding: 4rem 7%;
 	font-family: 'Raleway', sans-serif;
 	background: var(--bg-2);
 }
@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6, .btn, a {
 	min-height: 30rem;
 }
 
-#banner .content h2 {
+#banner .content h1 {
 	font-size: 2.5rem;
 	width: 40%;
 	margin: 0 auto;
@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6, .btn, a {
 }
 
 #stay-productive .content h2 {
-	font-size: 2.7rem;
+	font-size: 3.2rem;
 	margin-bottom: 2rem;
 	line-height: 1.6;
 	width: 50%;
@@ -221,8 +221,8 @@ h1, h2, h3, h4, h5, h6, .btn, a {
 
 #testimonials .box-container .quotes {
 	position: absolute;	
-	width: 7rem;
-	transform: translate(-2rem, -3rem);
+	width: 6rem;
+	transform: translate(-1rem, -4rem);
 	z-index: -1;
 }
 
@@ -358,15 +358,24 @@ h1, h2, h3, h4, h5, h6, .btn, a {
 	font-weight: 700;
 }
 
+#footer .footer-container .socials li {
+	display: inline-block;
+}
+
 #footer .footer-container .socials a {
+	display: inline-block;
 	margin-right: 1.5rem;
-	font-size: 1.5rem;
 	border: 0.1rem solid var(--white);
-	border-radius: 50%;
-	text-align: center;	
+	border-radius: 50%;	
 	line-height: 3rem;
+	text-align: center;
 	height: 3rem;
 	width: 3rem;
+}
+
+#footer .footer-container .socials a i {
+	font-size: 1.5rem;
+	border: none;
 }
 
 #footer .footer-container .socials a:hover {
@@ -401,7 +410,7 @@ h1, h2, h3, h4, h5, h6, .btn, a {
 		font-size: 60%;
 	}
 
-	#banner .content h2 {
+	#banner .content h1 {
 		width: 70%;
 	}
 
@@ -455,7 +464,7 @@ h1, h2, h3, h4, h5, h6, .btn, a {
 		background: url(./images/bg-curvy-mobile.svg) no-repeat top center/cover;
 	}
 
-	#banner .content h2 {
+	#banner .content h1 {
 		font-size: 2.5rem;
 		width: 90%;
 		margin-bottom: 2rem;

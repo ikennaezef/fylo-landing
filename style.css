@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+:root {
+	--bg-main: hsl(218, 28%, 13%);
+	--bg-2: hsl(217, 28%, 15%);
+	--bg-3: hsl(219, 30%, 18%);
+	--bg-4: hsl(216, 53%, 9%);
+	--accent: hsl(176, 68%, 64%);
+	--blue: hsl(198, 60%, 50%);
+	--white: hsl(0, 0%, 95%);
+	--gradient: linear-gradient(to right,
+		var(--accent) 0%,
+		var(--blue) 70%
+	);
+	--shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	list-style: none;
+	transition: all 0.3s ease;
+}
+
+a {
+	text-decoration: none;	
+	color: inherit;
+}
+
+html {
+	font-size: 65%;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: var(--bg-main);
+	color: var(--white);
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .btn, a {
+	font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+	font-size: 1.3rem;
+	padding: 1.5rem 6rem;
+	background: var(--gradient);
+	color: var(--white);
+	border-radius: 3rem;
+	font-weight: 700;
+	cursor: pointer;	
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+#header {
+	display: flex;	
+	align-items: center;
+	justify-content: space-between;
+	padding: 3rem 7%;
+	font-family: 'Raleway', sans-serif;
+	background: var(--bg-2);
+}
+
+#header .logo img {
+	width: 14rem;
+}
+
+#header .nav-bar {
+	display: flex;	
+	align-items: center;
+}
+
+#header .nav-bar a {
+	font-size: 1.3rem;
+	margin-left: 5rem;
+	font-weight: 400;
+}
+
+#header .nav-bar a:hover {
+	font-weight: 700;
+}
+
+#banner {
+	background: var(--bg-2);
+	display: flex;	
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 3rem;
+	padding-top: 5rem;
+}
+
+#banner .image {
+	margin-bottom: 2rem;
+}
+
+#banner .image img {
+	width: 50rem;
+}
+
+#banner .content {
+	padding: 6rem 1rem 15rem;
+	background: url(./images/bg-curvy-desktop.svg) no-repeat top center/cover;
+	width: 100%;
+	min-height: 30rem;
+}
+
+#banner .content h2 {
+	font-size: 2.5rem;
+	width: 40%;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+	line-height: 1.5;
+}
+
+#banner .content p {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	width: 40%;
+	margin: 0 auto;
+	margin-bottom: 2.5rem;
+}
+
+#attributes {
+	padding: 2rem 15%;
+	display: grid;	
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5rem;
+	margin-bottom: 3rem;
+}
+
+#attributes .box {
+	text-align: center;	
+}
+
+#attributes .box img {
+	width: 7rem;
+	margin-bottom: 2.5rem;
+}
+
+#attributes .box:nth-child(2) img {
+	width: 6rem;
+}
+
+#attributes .box h3 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+#attributes .box p {
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+#stay-productive {
+	padding: 3rem 7%;
+	margin-bottom: 5rem;
+	display: grid;	
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5rem;
+	align-items: center;
+}
+
+#stay-productive img.illustration {
+	width: 100%;
+}
+
+#stay-productive .content h2 {
+	font-size: 2.7rem;
+	margin-bottom: 2rem;
+	line-height: 1.6;
+	width: 50%;
+}
+
+#stay-productive .content p {
+	font-size: 1.4rem;
+	margin-bottom: 2rem;
+	line-height: 1.5;
+	width: 80%;
+}
+
+#stay-productive .content a {
+	font-size: 1.2rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 0.1rem solid var(--accent);
+	color: var(--accent);
+}
+
+#stay-productive .content a:hover {
+	color: var(--white);
+	border-bottom: 0.1rem solid var(--white);
+}
+
+#stay-productive .content a:hover img {
+	transform: translateX(0.5rem);
+}
+
+#stay-productive .content a img {
+	margin-left: 0.5rem;
+}
+
+#testimonials {
+	padding: 2rem 7%;
+	margin-bottom: 5rem;
+}
+
+#testimonials .box-container {
+	display: grid;	
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
+	position: relative;	
+}
+
+#testimonials .box-container .quotes {
+	position: absolute;	
+	width: 7rem;
+	transform: translate(-2rem, -3rem);
+	z-index: -1;
+}
+
+#testimonials .box {
+	background: var(--bg-3);
+	padding: 2rem;
+	border-radius: 0.5rem;
+	box-shadow: var(--shadow);
+}
+
+#testimonials .box .review {
+	font-size: 1.4rem;
+	line-height: 1.7;
+	margin-bottom: 2rem;
+}
+
+#testimonials .box .user {
+	display: flex;	
+	align-items: center;
+	gap: 2rem;
+}
+
+#testimonials .box .user img {
+	width: 3rem;
+	height: 3rem;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+#testimonials .box .user .details h4 {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+#testimonials .box .user .details p {
+	font-size: 1rem
+}
+
+#early-access {
+	padding: 2rem;
+}
+
+#early-access .access-box {
+	background: var(--bg-2);
+	max-width: 70rem;
+	margin: 0 auto;
+	padding: 3rem 5rem;
+	width: 100%;
+	border-radius: 0.5rem;
+	box-shadow: var(--shadow);
+	transform: translateY(10rem);
+}
+
+#early-access .access-box h2 {
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+	text-align: center;	
+}
+
+#early-access .access-box p {
+	font-size: 1.3rem;
+	width: 80%;
+	text-align: center;	
+	margin: 0 auto;
+	margin-bottom: 3rem;
+	line-height: 1.5;
+}
+
+#early-access .access-box #access-form {
+	display: flex;	
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+#early-access .access-box #access-form .form-control {
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	width: 100%;
+	font-family: inherit;
+}
+
+#early-access .access-box #access-form .form-control::placeholder {
+	color: #ccc;
+}
+
+#early-access .access-box #access-form .btn {
+	padding: 1.1rem 2rem;
+	font-size: 1.4rem;
+}
+
+#footer {
+	padding: 15rem 7% 5rem;
+	background: var(--bg-4);	
+}
+
+#footer .logo {
+	width: 10rem;
+	margin-bottom: 3rem;
+}
+
+#footer .footer-container {
+	display: grid;	
+	justify-content: center;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 3rem;
+}
+
+#footer .footer-container .location {
+	display: flex;	
+	gap: 1rem;
+}
+
+#footer .footer-container .location i {
+	font-size: 1.2rem;
+}
+
+#footer .footer-container .location p {
+	font-size: 1.1rem;
+}
+
+#footer .footer-container .footer-box:nth-child(2) li img {
+	width: 1.2rem;
+	margin-right: 2rem;
+}
+
+#footer .footer-container .footer-box li {
+	margin-bottom: 1.3rem;
+	font-size: 1.2rem;
+}
+
+#footer .footer-container .links a:hover {
+	font-weight: 700;
+}
+
+#footer .footer-container .socials a {
+	margin-right: 1.5rem;
+	font-size: 1.5rem;
+	border: 0.1rem solid var(--white);
+	border-radius: 50%;
+	text-align: center;	
+	line-height: 3rem;
+	height: 3rem;
+	width: 3rem;
+}
+
+#footer .footer-container .socials a:hover {
+	color: var(--accent);
+	border: 0.1rem solid var(--accent);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+
+@media(max-width: 900px) {
+
+	html {
+		font-size: 60%;
+	}
+
+	#banner .content h2 {
+		width: 70%;
+	}
+
+	#banner .content p {
+		width: 70%;
+	}
+
+	#stay-productive .content h2 {
+		width: 80%;
+	}
+
+	#stay-productive .content p {
+		width: 80%;
+	}
+
+	#footer .footer-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+
+}
+
+
+
+
+@media(max-width: 550px) {
+
+	html {
+		font-size: 55%;
+	}
+
+	#header {
+		padding: 2rem;
+	}
+
+	#header .logo img {
+		width: 10rem;
+	}
+
+	#header .nav-bar a {
+		font-size: 1.5rem;
+		margin-left: 2rem;
+	}
+
+	#banner .image img {
+		width: 25rem;
+	}
+
+	#banner .content {
+		padding: 6rem 1rem 12rem;
+		background: url(./images/bg-curvy-mobile.svg) no-repeat top center/cover;
+	}
+
+	#banner .content h2 {
+		font-size: 2.5rem;
+		width: 90%;
+		margin-bottom: 2rem;
+	}
+
+	#banner .content p {
+		font-size: 1.5rem;
+		line-height: 1.5;
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 3.5rem;
+	}
+
+	#attributes {
+		padding: 2rem 15%;
+		grid-template-columns: 1fr;
+	}
+
+	#stay-productive {
+		padding: 3rem 7%;
+		grid-template-columns: 1fr;
+	}
+
+	#stay-productive .content h2 {
+		width: 100%;
+	}
+
+	#stay-productive .content p {
+		font-size: 1.5rem;
+		width: 100%;
+	}
+
+	#testimonials .box-container {
+		grid-template-columns: 1fr;
+	}
+
+	#testimonials .box-container .quotes {
+		width: 4rem;
+	}
+
+	#testimonials .box .user .details h4 {
+		font-size: 1.1rem;
+	}
+
+	#testimonials .box .user .details p {
+		font-size: 1.1rem
+	}
+
+	#early-access .access-box #access-form {
+		flex-direction: column;
+	}
+
+	#early-access .access-box p {
+		width: 100%;
+	}
+
+	#early-access .access-box #access-form .btn {
+		width: 100%;
+		padding: 1.5rem;
+		font-size: 1.5rem;
+	}
+
+	#early-access .access-box {
+		padding: 2rem;
+	}
+
+	#footer .footer-container {
+		grid-template-columns: 1fr;
+	}
+
+}
